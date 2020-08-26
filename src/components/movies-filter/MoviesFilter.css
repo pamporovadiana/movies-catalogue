@@ -1,0 +1,83 @@
+div#filters-field {
+    width: 20%;
+}
+
+div#filters-field h2 {
+    padding: 0.2rem 0;
+    font-size: 1.3rem;
+}
+
+div#filters-field h3 {
+    padding: 0.5rem 0;
+    margin: 0.2rem 0;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+div#filters-field div#filters {
+    text-align: left;
+    border-bottom: 1px solid white;
+    padding: 0.5rem 0;
+
+}
+
+div#filters-field div#filters ul {
+    padding: 1rem 0;
+}
+
+div#filters-field div#filters li {
+    padding: 0.1rem 0;
+}
+
+div#filters-field div#filters label {
+    width: 100%;
+    text-align: left;
+}
+
+div#filters-field div#filters input {
+    width: 10%;
+    margin-left: 0.3rem;
+}
+
+/* Tablet */
+/* *********************************************************************************************** */
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
+    div#filters-field {
+        width: 100%;
+    }
+
+    div#filters-field h2 {
+        text-align: center;
+    }
+
+    
+    div#filters-field h2,
+    div#filters-field h3 {
+        font-size: 1rem;
+    }
+
+    div#filters-field div#filters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+/* Mobile */
+/* *********************************************************************************************** */
+@media only screen and (max-width: 720px) {
+    div#filters-field {
+        width: 100%;
+    }
+
+    div#filters-field h2,
+    div#filters-field h3 {
+        text-align: center;
+    }
+
+    
+    div#filters-field div#filters {
+        text-align: center;
+    }
+}

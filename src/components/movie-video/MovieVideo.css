@@ -1,0 +1,8 @@
+div#movie {
+    height: 100vh;
+}
+
+div#movie iframe {
+    width: 100%;
+    height: 100%;
+}

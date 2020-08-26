@@ -1,0 +1,56 @@
+div#dropdown-menu {
+    background: #042331;
+    padding-bottom: 1rem;
+}
+
+div#dropdown-menu button {
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+div#dropdown-menu button svg {
+    font-size: 2rem;
+}
+
+div#dropdown-menu nav#mobile-navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+div#dropdown-menu nav#mobile-navbar ul#menu-list,
+div#dropdown-menu nav#mobile-navbar ul#registration-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div#dropdown-menu nav#mobile-navbar ul#menu-list:first-child {
+    padding-top: 1.5rem;
+}
+
+div#dropdown-menu nav#mobile-navbar ul#menu-list li,
+div#dropdown-menu nav#mobile-navbar ul#registration-list li {
+    display: block;
+}
+
+div#dropdown-menu nav#mobile-navbar ul#menu-list a,
+div#dropdown-menu nav#mobile-navbar ul#registration-list a {
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    transition: .4s;
+    z-index: 1;
+}
+
+div#dropdown-menu nav#mobile-navbar ul#menu-list li:hover a,
+div#dropdown-menu nav#mobile-navbar ul#registration-list li:hover a {
+    color: #4093e0;
+}

@@ -1,0 +1,43 @@
+div#social-icons {
+    margin-left: auto;
+    text-align: left;
+    padding-right: 1rem;
+}
+
+div#social-icons h5 {
+    padding: 0.5rem;
+}
+
+div#social-icons ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+    align-self: baseline;
+}
+
+div#social-icons > ul > li > a {
+    color: aliceblue;
+    transition: .4s;
+}
+
+div#social-icons > ul li#facebook a:hover,
+div#social-icons > ul li#instagram a:hover,
+div#social-icons > ul li#linkedin a:hover {
+    color: #4093e0;
+}
+
+.fa {
+    padding-right: 0.5rem;
+}
+
+/* Mobile */
+/* *********************************************************************************************** */
+@media only screen and (max-width: 720px) {
+    div#social-icons {
+        width: 100%;
+        margin-left: unset;
+        justify-items: center;
+        text-align: center;
+    }
+}

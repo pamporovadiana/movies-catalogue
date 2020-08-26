@@ -1,0 +1,33 @@
+header h1#title {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 9px black;
+    background: #042331;
+    padding: 1rem 0;
+}
+
+header h1#title a {
+    display: block;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../assets/images/dimes.jfif');
+    background-size: cover;
+    padding: 1rem 0;
+}
+
+header div#dropdown-menu {
+    display: none;
+}
+
+/* Mobile */
+/* *********************************************************************************************** */
+@media only screen and (max-width: 720px) {
+    header div#dropdown-menu {
+        display: block;
+    }
+
+    header nav#navbar {
+        display: none;
+    }
+}

@@ -1,0 +1,54 @@
+main {
+    background: black;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pagination {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.pagination a {
+    color: white;
+    display: inline;
+    padding: 0.2rem 0.7rem 0.3rem;
+    margin: 0 0.2rem;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+}
+
+.pagination a:hover,
+.pagination li:hover a {
+    color: #4093e0;
+    border: 1px solid #4093e0;
+}
+
+/* Tablet */
+/* *********************************************************************************************** */
+/* @media only screen and (min-width: 721px) and (max-width: 1024px) {} */
+
+
+/* Mobile */
+/* *********************************************************************************************** */
+@media only screen and (max-width: 720px) {
+    main {
+        padding: unset;
+    }
+
+    .pagination {
+        padding: 2rem 0;
+    }
+
+    .pagination a {
+        margin: unset;
+        padding: 0.1rem 0.6rem 0.2rem;
+    }
+}
+

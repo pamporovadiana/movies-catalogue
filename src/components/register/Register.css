@@ -1,0 +1,99 @@
+div#form-container {
+    width: 100%;
+    background-color: black;
+}
+
+div.register-form {
+    padding: 7rem 0;
+}
+
+div.register-form form {
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    background: lightgrey;
+    border-radius: 0.4rem;
+    position: relative;
+}
+
+div.register-form form h3 {
+    display: inline-block;
+    padding: 0.3rem;
+}
+
+div.register-form form h3 a {
+    color: white;
+}
+
+div.register-form form h3 a:hover {
+    color: darkblue;
+}
+
+div.register-form form h3#register a {
+    color: darkblue;
+}
+
+div.register-form form input {
+    background: #e3f3f2;
+    display: block;
+    width: 100%;
+    margin: 0.5rem auto;
+    padding: 0.7rem 0 0.7rem 3.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+div.register-form form input:active {
+    background: #e3f3f2;
+}
+
+div.register-form form i.fa {
+    color: black;
+    position: absolute;
+    left: 2.5rem;
+    padding-top: 0.7em;
+    z-index: 1;
+}
+
+div.register-form form button#register-button {
+    font-size: 1rem;
+    color: white;
+    background: rgb(61, 201, 61);
+    width: 95%;
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    display: block;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+/* Desktop */
+/* *********************************************************************************************** */
+/* @media only screen and (min-width: 1024px) and (max-width: 1366px) {} */
+
+
+/* Tablet */
+/* *********************************************************************************************** */
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
+    div.register-form {
+        padding: 15.4rem 0;
+    }
+}
+
+
+/* Mobile */
+/* *********************************************************************************************** */
+@media only screen and (max-width: 720px) {
+    div.register-form form {
+        width: 100%;
+    }
+
+    div.register-form {
+        padding: 1rem;
+    }
+}

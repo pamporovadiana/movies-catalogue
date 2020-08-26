@@ -1,0 +1,52 @@
+div#movie-details {
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div#movie-details div#movie-image {
+    width: 30%;
+}
+
+div#movie-details div#movie-image img {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+div#movie-details div#movie-info {
+    width: 35%;
+    padding: 0.5rem;
+}
+
+div#movie-details div#movie-info div#movie-trailer {
+    width: 100%;
+}
+
+div#movie-details div#movie-info div#movie-trailer iframe {
+    width: 100%;
+}
+
+div#movie-details div#movie-info div#movie-trailer #watch-video-button {
+    font-size: 1rem;
+    color: white;
+    background: rgb(61, 201, 61);
+    padding: 0.7rem 1rem;
+    display: block;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+div#movie-details div#movie-info h2,
+div#movie-details div#movie-info div.movie-info > span {
+    color: #7090e9;
+    padding-right: 0.3rem;
+}
+
+div#movie-details div#movie-info div.movie-info {
+    padding: 0.2rem;
+}
