@@ -10,6 +10,7 @@ footer {
 footer h5 {
     text-align: left;
     padding-left: 1rem;
+    align-self: flex-end;
 }
 
 /* Mobile */
