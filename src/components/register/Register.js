@@ -42,13 +42,12 @@ class Register extends Component {
     }
 
     validateForm() {
-        if(this.state.firstName.match('[A-Z]{1}[a-z]{1,30}') &&
-            this.state.lastName.match('[A-Z]{1}[a-z]{1,30}') &&
-            this.state.username.match('[A-Z][a-z]{1,30}') &&
-            // TODO: email validation
-            // this.state.email.match('/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]/') &&
-            this.state.password.match('[A-Za-z0-9]{1,30}') &&
-            this.state.confirmPassword.match(this.state.password)
+        if (/[A-Z]{1}[a-z]{1,30}/.test(this.state.firstName) &&
+            /[A-Z]{1}[a-z]{1,30}/.test(this.state.lastName) &&
+            /[A-Z][a-z]{1,30}/.test(this.state.username) &&
+            /[a-z]+.[a-z]+@+[a-z]{0,5}.+[a-z]{0,5}/.test(this.state.email) &&
+            /[A-Za-z0-9]{1,30}/.test(this.state.password) &&
+            this.state.password === this.state.confirmPassword
         ) {
             return true;
         } else {
