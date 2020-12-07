@@ -14,6 +14,7 @@ class Register extends Component {
             password: '',
             confirmPassword: ''
         };
+
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.validateForm = this.validateForm.bind(this);
@@ -26,24 +27,29 @@ class Register extends Component {
         const value = e.target.value;
 
         this.setState({ [name]: value });
+        console.log(name, value);
     }
 
     handleSubmit(e) {
         e.preventDefault();
         const validated = this.validateForm();
 
-        console.log(validated)
-        // if(validated) {
-        //     this.registerService.registerUser(this.state);
-        // }
+        console.log(validated);
+
+        if(validated) {
+            this.registerService.registerUser(this.state);
+        }
     }
 
     validateForm() {
-        // if(this.state.password !== this.state.confirmPasswordsword) {
-        //     alert('Confirmation did not suucceed!');
-        // }
-
-        if(this.state.firstName.match('[A-Z]{1}[a-z]{1,30}')) {
+        if(this.state.firstName.match('[A-Z]{1}[a-z]{1,30}') &&
+            this.state.lastName.match('[A-Z]{1}[a-z]{1,30}') &&
+            this.state.username.match('[A-Z][a-z]{1,30}') &&
+            // TODO: email validation
+            // this.state.email.match('/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]/') &&
+            this.state.password.match('[A-Za-z0-9]{1,30}') &&
+            this.state.confirmPassword.match(this.state.password)
+        ) {
             return true;
         } else {
             return false;
@@ -65,6 +71,7 @@ class Register extends Component {
                                     name="firstName"
                                     placeholder="First Name"
                                     onChange={this.handleInputChange}
+                                    value={this.state.firstName}
                                     // require
                                 >
                                 </input>
@@ -76,6 +83,7 @@ class Register extends Component {
                                     name="lastName"
                                     placeholder="Last Name"
                                     onChange={this.handleInputChange}
+                                    value={this.state.lastName}
                                     // require
                                 >
                                 </input>
@@ -87,6 +95,7 @@ class Register extends Component {
                                     name="username"
                                     placeholder="Username"
                                     onChange={this.handleInputChange}
+                                    value={this.state.username}
                                     // require
                                 >
                                 </input>
@@ -98,6 +107,7 @@ class Register extends Component {
                                     name="email"
                                     placeholder="Email"
                                     onChange={this.handleInputChange}
+                                    value={this.state.email}
                                     // require
                                 >
                                 </input>
@@ -109,6 +119,7 @@ class Register extends Component {
                                     name="password"
                                     placeholder="Password"
                                     onChange={this.handleInputChange}
+                                    value={this.state.password}
                                     // require
                                 >
                                 </input>
@@ -120,13 +131,14 @@ class Register extends Component {
                                     name="confirmPassword"
                                     placeholder="Confirm Password"
                                     onChange={this.handleInputChange}
+                                    value={this.state.confirmPassword}
                                     // require
                                 >
                                 </input>
                             </div>
                         <button type="submit"
                             id="register-button" 
-                            onClick={this.handleSubmit, this.validateForm}
+                            onClick={this.handleSubmit}
                         >
                             Register
                         </button>
