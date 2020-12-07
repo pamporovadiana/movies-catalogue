@@ -45,7 +45,7 @@ function MoviesFilter() {
                     <h3>By Country:</h3>
                     <ul>
                         <li>
-                            <label htmlFor="comedy">USA
+                            <label htmlFor="usa">USA
                                 <input type="radio" id="usa" name="country" value="usa"/>
                             </label>
                         </li>
@@ -95,33 +95,28 @@ function MoviesFilter() {
                     <h3>By Rating:</h3>
                     <ul>
                         <li>
-                            <label htmlFor="comedy">Comedy
-                                <input type="radio" id="comedy" name="rating" value="comedy"/>
+                            <label htmlFor="1">1
+                                <input type="radio" id="1" name="rating" value="comedy"/>
                             </label>
                         </li>
                         <li>
-                            <label htmlFor="romantic">Romantic
-                                <input type="radio" id="romantic" name="rating" value="romantic"/>
+                            <label htmlFor="2">2
+                                <input type="radio" id="2" name="rating" value="romantic"/>
                             </label>
                         </li>
                         <li>
-                            <label htmlFor="drama">Drama
-                                <input type="radio" id="drama" name="rating" value="drama"/>
+                            <label htmlFor="3">3
+                                <input type="radio" id="3" name="rating" value="drama"/>
                             </label>
                         </li>
                         <li>
-                            <label htmlFor="action">Action
-                                <input type="radio" id="action" name="rating" value="action"/>
+                            <label htmlFor="4">4
+                                <input type="radio" id="4" name="rating" value="action"/>
                             </label>
                         </li>
                         <li>
-                            <label htmlFor="syfy">Syfy
-                                <input type="radio" id="syfy" name="rating" value="syfy"/>
-                            </label>
-                        </li>
-                        <li>
-                            <label htmlFor="thriler">Thriler
-                                <input type="radio" id="thriler" name="rating" value="thriler"/>
+                            <label htmlFor="5">5
+                                <input type="radio" id="5" name="rating" value="syfy"/>
                             </label>
                         </li>
                     </ul>
