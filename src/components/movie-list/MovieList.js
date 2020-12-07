@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Card from '../card/Card';
+import MovieCard from '../movie-card/MovieCard';
 
 class MovieList extends Component {
     render() {
         const movieCards = this.props.data.map(({ id, image, title, quality }) =>
-            (<Card key={id} id={id} image={image} title={title} quality={quality} />));
+            (<MovieCard key={id} id={id} image={image} title={title} quality={quality} />));
 
         return (
             <section className="movies-cards">

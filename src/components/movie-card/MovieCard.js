@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import './Card.css';
+import './MovieCard.css';
 
-function Card(props) {
+function MovieCard(props) {
     const { id, image, title, quality } = props;
 
     return (
@@ -23,4 +23,4 @@ function Card(props) {
     );
 }
 
-export default Card;
+export default MovieCard;
